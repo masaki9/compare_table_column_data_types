@@ -18,12 +18,24 @@ Generates dynamic SQL statements for transforming and aligning data types betwee
 
 ## Usage
 
-1. Clone the repository:
+1. Clone the repository and its submodules:
 
 ```bash
-git clone https://github.com/masaki9/compare_table_column_data_types.git
+git clone --recurse-submodules https://github.com/masaki9/compare_table_column_data_types.git
 ```
 
 2. Execute the SQL scripts in your MySQL environment.
 
 3. Modify the scripts as per your specific requirements.
+
+## MySQL Environment Setup (Optional)
+
+This repository includes a `mysql_docker` submodule. This Docker setup allows you to quickly deploy a MySQL environment for executing the included SQL scripts.
+
+### Setting up MySQL using Docker
+Navigate to the MySQL docker container directory:
+```bash
+cd compare_table_column_data_types/mysql_docker
+```
+
+Follow the instructions in `mysql_docker/README.md` to start the MySQL container.
